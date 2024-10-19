@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountType"
+    android:background="#F37D8A">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="390dp"
+        android:layout_height="209dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/top_backgroundd" />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="205dp"
+        android:layout_height="69dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Select Yout Account category"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.608" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="253dp"
+        android:layout_height="62dp"
+        android:fontFamily="@font/aclonica"
+        android:text="FAST FOOD"
+        android:textAlignment="center"
+        android:textColor="#030F53"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="376dp"
+        android:layout_height="248dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Seller account"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="18dp" />
+
+
+        <ImageButton
+            android:id="@+id/sellimg"
+            android:layout_width="162dp"
+            android:layout_height="142dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@drawable/selll" />
+
+        <Button
+            android:id="@+id/login3"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bottom_background"
+            android:text="LOGIN"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="254dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/buyerr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Buyer account"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/buy"
+            android:layout_width="176dp"
+            android:layout_height="143dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@drawable/buyer" />
+
+
+        <Button
+            android:id="@+id/login2"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bottom_background"
+            android:text="login"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
